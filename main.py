@@ -23,7 +23,7 @@ expected_price = 40
 if expected_price > price_float:
     with smtplib.SMTP("smtp-mail.outlook.com") as connection:
         connection.starttls()
-        connection.login(USER, PASSWORD)
+        connection.login(YOUR_EMAIL, PASSWORD)
         connection.sendmail(
             from_addr=YOUR_EMAIL,
             to_addrs=SENDER_EMAIL,
